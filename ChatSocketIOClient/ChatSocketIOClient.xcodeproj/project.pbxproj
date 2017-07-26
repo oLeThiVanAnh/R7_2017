@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537D8C38CE32FA05069978CC /* Pods_ChatSocketIOClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0F50E47A932E1D57D16048 /* Pods_ChatSocketIOClient.framework */; };
+		FFCED2D81F25D6C300A673BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCED2D71F25D6C300A673BC /* AppDelegate.swift */; };
+		FFCED2DD1F25D6C300A673BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCED2DB1F25D6C300A673BC /* Main.storyboard */; };
+		FFCED2DF1F25D6C300A673BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFCED2DE1F25D6C300A673BC /* Assets.xcassets */; };
+		FFCED2E21F25D6C300A673BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCED2E01F25D6C300A673BC /* LaunchScreen.storyboard */; };
+		FFCED2EA1F25F49000A673BC /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCED2E91F25F49000A673BC /* FriendListViewController.swift */; };
+		FFCED2EC1F25F54600A673BC /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCED2EB1F25F54600A673BC /* SocketIOManager.swift */; };
+		FFCED2EE1F25FADC00A673BC /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCED2ED1F25FADC00A673BC /* ChatMessage.swift */; };
+		FFCED2F01F26499600A673BC /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCED2EF1F26499600A673BC /* FriendModel.swift */; };
+		FFCED2F21F265B8700A673BC /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCED2F11F265B8700A673BC /* ChatRoomViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48883261E0951D4D401A9A9A /* Pods-ChatSocketIOClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatSocketIOClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatSocketIOClient/Pods-ChatSocketIOClient.debug.xcconfig"; sourceTree = "<group>"; };
+		8B0F50E47A932E1D57D16048 /* Pods_ChatSocketIOClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatSocketIOClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C21BCACC21C3E179CF2FF5E /* Pods-ChatSocketIOClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatSocketIOClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatSocketIOClient/Pods-ChatSocketIOClient.release.xcconfig"; sourceTree = "<group>"; };
+		FFCED2D41F25D6C300A673BC /* ChatSocketIOClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatSocketIOClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCED2D71F25D6C300A673BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFCED2DC1F25D6C300A673BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFCED2DE1F25D6C300A673BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFCED2E11F25D6C300A673BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFCED2E31F25D6C300A673BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFCED2E91F25F49000A673BC /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		FFCED2EB1F25F54600A673BC /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		FFCED2ED1F25FADC00A673BC /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		FFCED2EF1F26499600A673BC /* FriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		FFCED2F11F265B8700A673BC /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFCED2D11F25D6C300A673BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537D8C38CE32FA05069978CC /* Pods_ChatSocketIOClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1E17EDE238904B7D772A53A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48883261E0951D4D401A9A9A /* Pods-ChatSocketIOClient.debug.xcconfig */,
+				9C21BCACC21C3E179CF2FF5E /* Pods-ChatSocketIOClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E75E3C1935CF0416CE605198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B0F50E47A932E1D57D16048 /* Pods_ChatSocketIOClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCED2CB1F25D6C300A673BC = {
+			isa = PBXGroup;
+			children = (
+				FFCED2D61F25D6C300A673BC /* ChatSocketIOClient */,
+				FFCED2D51F25D6C300A673BC /* Products */,
+				B1E17EDE238904B7D772A53A /* Pods */,
+				E75E3C1935CF0416CE605198 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFCED2D51F25D6C300A673BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFCED2D41F25D6C300A673BC /* ChatSocketIOClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFCED2D61F25D6C300A673BC /* ChatSocketIOClient */ = {
+			isa = PBXGroup;
+			children = (
+				FFCED2D71F25D6C300A673BC /* AppDelegate.swift */,
+				FFCED2DB1F25D6C300A673BC /* Main.storyboard */,
+				FFCED2DE1F25D6C300A673BC /* Assets.xcassets */,
+				FFCED2E01F25D6C300A673BC /* LaunchScreen.storyboard */,
+				FFCED2E31F25D6C300A673BC /* Info.plist */,
+				FFCED2E91F25F49000A673BC /* FriendListViewController.swift */,
+				FFCED2EB1F25F54600A673BC /* SocketIOManager.swift */,
+				FFCED2ED1F25FADC00A673BC /* ChatMessage.swift */,
+				FFCED2EF1F26499600A673BC /* FriendModel.swift */,
+				FFCED2F11F265B8700A673BC /* ChatRoomViewController.swift */,
+			);
+			path = ChatSocketIOClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFCED2D31F25D6C300A673BC /* ChatSocketIOClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFCED2E61F25D6C300A673BC /* Build configuration list for PBXNativeTarget "ChatSocketIOClient" */;
+			buildPhases = (
+				7D16BC707BA3C3E8A7DB19C9 /* [CP] Check Pods Manifest.lock */,
+				FFCED2D01F25D6C300A673BC /* Sources */,
+				FFCED2D11F25D6C300A673BC /* Frameworks */,
+				FFCED2D21F25D6C300A673BC /* Resources */,
+				B3CADF330EFE1B682FD2CC83 /* [CP] Embed Pods Frameworks */,
+				CC1F6819C33EF4243A631F86 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatSocketIOClient;
+			productName = ChatSocketIOClient;
+			productReference = FFCED2D41F25D6C300A673BC /* ChatSocketIOClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFCED2CC1F25D6C300A673BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = vananh;
+				TargetAttributes = {
+					FFCED2D31F25D6C300A673BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FFCED2CF1F25D6C300A673BC /* Build configuration list for PBXProject "ChatSocketIOClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFCED2CB1F25D6C300A673BC;
+			productRefGroup = FFCED2D51F25D6C300A673BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFCED2D31F25D6C300A673BC /* ChatSocketIOClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFCED2D21F25D6C300A673BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCED2E21F25D6C300A673BC /* LaunchScreen.storyboard in Resources */,
+				FFCED2DF1F25D6C300A673BC /* Assets.xcassets in Resources */,
+				FFCED2DD1F25D6C300A673BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D16BC707BA3C3E8A7DB19C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CADF330EFE1B682FD2CC83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatSocketIOClient/Pods-ChatSocketIOClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1F6819C33EF4243A631F86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatSocketIOClient/Pods-ChatSocketIOClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFCED2D01F25D6C300A673BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCED2F21F265B8700A673BC /* ChatRoomViewController.swift in Sources */,
+				FFCED2EC1F25F54600A673BC /* SocketIOManager.swift in Sources */,
+				FFCED2F01F26499600A673BC /* FriendModel.swift in Sources */,
+				FFCED2D81F25D6C300A673BC /* AppDelegate.swift in Sources */,
+				FFCED2EE1F25FADC00A673BC /* ChatMessage.swift in Sources */,
+				FFCED2EA1F25F49000A673BC /* FriendListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFCED2DB1F25D6C300A673BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCED2DC1F25D6C300A673BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFCED2E01F25D6C300A673BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFCED2E11F25D6C300A673BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFCED2E41F25D6C300A673BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFCED2E51F25D6C300A673BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFCED2E71F25D6C300A673BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48883261E0951D4D401A9A9A /* Pods-ChatSocketIOClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChatSocketIOClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vananh.ChatSocketIOClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FFCED2E81F25D6C300A673BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C21BCACC21C3E179CF2FF5E /* Pods-ChatSocketIOClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChatSocketIOClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vananh.ChatSocketIOClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFCED2CF1F25D6C300A673BC /* Build configuration list for PBXProject "ChatSocketIOClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCED2E41F25D6C300A673BC /* Debug */,
+				FFCED2E51F25D6C300A673BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFCED2E61F25D6C300A673BC /* Build configuration list for PBXNativeTarget "ChatSocketIOClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCED2E71F25D6C300A673BC /* Debug */,
+				FFCED2E81F25D6C300A673BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFCED2CC1F25D6C300A673BC /* Project object */;
+}
